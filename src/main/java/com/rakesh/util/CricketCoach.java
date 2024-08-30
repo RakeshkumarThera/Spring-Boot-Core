@@ -1,4 +1,4 @@
-package com.rakesh.springcoredemo;
+package com.rakesh.util;
 
 import org.springframework.stereotype.Component;
 
