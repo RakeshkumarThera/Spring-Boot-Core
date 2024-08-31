@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
     private Coach myCoach;                                  //Field Injection: if constructor or setters are not used than it's left with this line alone it's called Field injection
 
+//    @Autowired                                            //this is constructor injection
+//    public DemoController(@Qualifier("baseballCoach") Coach theCoach){  //using qualifier
+//        myCoach = theCoach;
+//    }
+
     @Autowired                                            //this is constructor injection
-    public DemoController(@Qualifier("baseballCoach") Coach theCoach){
+    public DemoController(Coach theCoach){
         myCoach = theCoach;
     }
 
