@@ -28,7 +28,6 @@ public class DemoController {
 //    }
 
 
-
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
