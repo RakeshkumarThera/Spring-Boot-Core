@@ -11,8 +11,8 @@ public class DemoController {
     private Coach myCoach;                                  //Field Injection: if constructor or setters are not used than it's left with this line alone it's called Field injection
     private Coach anotherCoach;
     @Autowired                                            //this is constructor injection
-    public DemoController(@Qualifier("baseballCoach") Coach theCoach,
-                          @Qualifier("baseballCoach") Coach theAnotherCoach){ //singleton scope referring to same bean
+    public DemoController(@Qualifier("swimCoach") Coach theCoach,
+                          @Qualifier("swimCoach") Coach theAnotherCoach){ //singleton scope referring to same bean
         System.out.println("In Constructor" + getClass().getSimpleName());
         myCoach = theCoach;
         anotherCoach = theAnotherCoach;
